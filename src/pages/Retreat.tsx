@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, MapPin, Users, Calendar, ExternalLink } from "lucide-react";
-import retreatHero from "@/assets/retreat-hero.jpg";
+import retreatHero from "@/assets/retreat-main.jpg";
 import FooterSection from "@/components/FooterSection";
 
 const included = [
