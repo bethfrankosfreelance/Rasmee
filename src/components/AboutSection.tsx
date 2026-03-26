@@ -11,7 +11,7 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <span className="font-body text-sm font-semibold tracking-widest uppercase text-amber mb-4 block">
+          <span className="font-body text-sm font-semibold tracking-widest uppercase text-terra mb-4 block">
             Why Work With Me
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-8">

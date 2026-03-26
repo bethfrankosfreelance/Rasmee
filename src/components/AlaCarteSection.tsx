@@ -16,7 +16,7 @@ const AlaCarteSection = () => {
     <section className="py-24 bg-background">
       <div className="section-container">
         <div className="text-center mb-16">
-          <span className="font-body text-sm font-semibold tracking-widest uppercase text-amber mb-4 block">
+          <span className="font-body text-sm font-semibold tracking-widest uppercase text-terra mb-4 block">
             Flexible Options
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
@@ -32,10 +32,10 @@ const AlaCarteSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="flex items-start gap-4 p-5 rounded-xl bg-card border border-border hover:border-amber/40 hover:shadow-md transition-all duration-300 group"
+              className="flex items-start gap-4 p-5 rounded-xl bg-card border border-border hover:border-terra/40 hover:shadow-md transition-all duration-300 group"
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-amber/10 flex items-center justify-center group-hover:bg-amber/20 transition-colors">
-                <Zap className="w-5 h-5 text-amber" />
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-terra/10 flex items-center justify-center group-hover:bg-terra/20 transition-colors">
+                <Zap className="w-5 h-5 text-terra" />
               </div>
               <div>
                 <span className="font-display text-xl font-bold text-foreground">{pkg.price}</span>
