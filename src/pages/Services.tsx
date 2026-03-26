@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calendar, Clock, DollarSign } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
 import FooterSection from "@/components/FooterSection";
 
 const services = [
@@ -77,7 +77,6 @@ const Services = () => {
 
                 {service.price && (
                   <div className="flex items-center gap-2 mb-3">
-                    <DollarSign className="w-4 h-4 text-primary" />
                     <span className="font-body text-primary font-semibold">{service.price}</span>
                   </div>
                 )}
