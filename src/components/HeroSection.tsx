@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroBg from "@/assets/wellness-card.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 import butterflyLogo from "@/assets/butterfly-logo.png";
 
 const HeroSection = () => {
