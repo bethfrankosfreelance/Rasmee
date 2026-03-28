@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { Check, MapPin, Users, Calendar, ExternalLink } from "lucide-react";
 import retreatHero from "@/assets/retreat-main-Morpho.jpg";
+import photoKidsYoga from "@/assets/retreat-kids-yoga.jpg";
+import photoKidsSand from "@/assets/retreat-kids-sand.jpg";
+import photoHorseRide from "@/assets/retreat-horse-ride.jpg";
 import FooterSection from "@/components/FooterSection";
 
 const included = [
@@ -139,6 +142,37 @@ const Retreat = () => {
             Within a moment's walk: an amazing cafe and local restaurant, a mini supermarket, gelato, a bookstore, 
             great pizza, breakfast, bakery and smoothie spot, and the beach.
           </p>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="py-20 bg-background">
+        <div className="section-container">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+            Life at the Retreat
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {[
+              { src: photoKidsYoga, alt: "Georgia teaching kids yoga" },
+              { src: photoKidsSand, alt: "Kids playing in the sand" },
+              { src: photoHorseRide, alt: "Horse ride adventure" },
+            ].map(({ src, alt }, i) => (
+              <motion.div
+                key={alt}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="overflow-hidden rounded-2xl aspect-square"
+              >
+                <img
+                  src={src}
+                  alt={alt}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
