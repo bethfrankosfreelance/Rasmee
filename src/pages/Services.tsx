@@ -34,8 +34,8 @@ const services = [
   {
     title: "Travel Planning",
     schedule: null,
-    note: "Let Georgia help you plan your next transformative journey. From retreat travel to family adventures, get personalized itinerary support and destination guidance tailored to you.",
-    price: null,
+    note: "Want to plan a trip or thinking about relocating to Costa Rica or Nicaragua? Let me be your point of contact. Set up a 30 minute consultation plus 1 week of texting support for $60.",
+    price: "$60 — 30 min consultation + 1 week of texting support",
     bookingUrl: null,
   },
 ];
