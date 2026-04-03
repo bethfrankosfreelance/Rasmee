@@ -2,25 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/butterfly-favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rasmee Wellness & Metamorphosis Travel | Yoga, Bodywork, Retreats</title>
-    <meta name="description" content="Holistic healing with Georgia Rasmee." />
-    <meta name="author" content="Rasmee Wellness" />
-
-    <meta property="og:title" content="Rasmee Wellness & Metamorphosis Travel" />
-    <meta property="og:description" content="Yoga, bodywork, energy work, tarot guidance and transformative retreats in Costa Rica." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://rasmee-wellness--bffreelance.replit.app/og-image.jpg" />
-    <meta property="og:image:width" content="653" />
-    <meta property="og:image:height" content="564" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://rasmee-wellness--bffreelance.replit.app/og-image.jpg" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages SPA redirect
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
   </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <body></body>
 </html>
