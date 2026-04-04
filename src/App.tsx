@@ -12,12 +12,14 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/Rasmee">
+      <BrowserRouter basename={basename}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
